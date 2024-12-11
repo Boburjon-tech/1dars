@@ -124,7 +124,7 @@ header {
 }
 
 .header-btn:hover {
-  background-color: linear-gradient(90deg, #FFE2D1 80%,#FFF5EF);
+  background: linear-gradient(90deg, #FFE2D1 ,#FFF5EF);
 }
 
 .header-hero-btn {
@@ -400,6 +400,10 @@ header {
   width:238px;
 }
 
+.starter-table-btn:hover {
+  background: linear-gradient(90deg, #FFE2D1 ,#FFF5EF);
+}
+
 .pro-table {
   background:linear-gradient(120deg, transparent,#FAF5F3  80%, #9cc9da);
   width:350px;
@@ -425,6 +429,11 @@ header {
   border:2px solid #062630;
   background-color:#FFF5EF;
 }
+
+.pro-table-btn:hover {
+  background: linear-gradient(90deg, #FFE2D1 ,#FFF5EF);
+}
+
 .enterprice-table {
   margin-top: 16px;
   border: 1px solid #E6E1DF;
@@ -450,6 +459,10 @@ header {
   padding: 20px 43px;
   background-color: #FFF5EF;
   width:238px;
+}
+
+.enterprice-table-btn:hover {
+  background: linear-gradient(90deg, #FFE2D1 ,#FFF5EF);
 }
 
 .elements {
@@ -520,6 +533,10 @@ footer {
   margin-bottom: 24px;
  
 }
+
+.debug-btn:hover {
+  background: linear-gradient(90deg, #385159 20%, #062630 );
+}
 .debug-btn-par-img {
   padding:20.5px 24px;
   display: flex;
@@ -564,6 +581,15 @@ footer .amount-of-members {
 .butter-fly-icon {
   margin-right: 24px;
 }
+
+.butter-fly-icon:hover svg path {
+  fill:#9BA8AC;
+}
+
 .linkedin-icon {
+}
+
+.linkedin-icon:hover svg path {
+  fill:#9BA8AC ;
 }
 
