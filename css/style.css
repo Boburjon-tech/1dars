@@ -1,0 +1,569 @@
+@import "./normalize.css";
+
+/* INTER FONTS */
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter-regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v18-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter-semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v18-latin-600.woff2") format("woff2");
+}
+
+/* MARTIANO FONTS */
+
+@font-face {
+  font-display: swap;
+  font-family: "Martian Mono-400";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/martian-mono-v3-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Martian Mono-600";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/martian-mono-v3-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Martian Mono-700";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/martian-mono-v3-latin-700.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 135px;
+  padding-right: 135px;
+}
+
+.min-container {
+  width:100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 235px;
+  padding-right: 235px;
+}
+
+/* HEADER STYLES */
+header {
+}
+.header-container {
+  padding-top: 32px;
+  background-image: linear-gradient(120deg, transparent,#FAF5F3 80%, #9cc9da),
+    url(../images/Vector.png);
+  height: 820px;
+}
+
+/* JOINING STYLES */
+
+.joining-container {
+  border-radius: 8px;
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.joining-informations {
+}
+.joining-title {
+  /* width:100%;
+    max-width:570px; */
+  font-size: 62px;
+  font-family: "Martian Mono-700", sans-serif;
+  background: linear-gradient(90deg, #FEA36F,10%, #062630);
+  color: transparent;
+  background-clip: text;
+  clip-path: text;
+}
+.joining-description {
+  font-size: 20px;
+  font-family: "Inter-regular", sans-serif;
+  line-height: 140%;
+  margin-top: 24px;
+}
+
+.header-btn {
+  border: 2px solid #062630;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 32px;
+  box-shadow: 0px 0px 8px 0px;
+}
+
+.header-btn:hover {
+  background-color: linear-gradient(90deg, #FFE2D1 80%,#FFF5EF);
+}
+
+.header-hero-btn {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.header-hero-btn-par {
+  font-size: 18px;
+  font-family: "Martian Mono-600", sans-serif;
+  padding-top: 20.5px;
+  margin-bottom: 20.5px;
+  padding-right: 16px;
+  padding-left: 24px;
+}
+
+.header-hero-btn-icon {
+  padding-right: 24px;
+}
+
+.members-con {
+  display: flex;
+  align-items: center;
+}
+.members-avatars {
+  margin-right: 12px;
+}
+.star-and-amount-container {
+}
+.stars-container {
+}
+.amount-of-members {
+  font-size: 14px;
+  font-family: "Martian Mono-400", sans-serif;
+  color: #385159;
+}
+.joining-main-image {
+  border-radius: 8px;
+}
+
+/* READS STYLES START */
+
+.reads {
+}
+
+.reads-container {
+  display: flex;
+  padding-top: 120px;
+}
+
+.reads-main-img {
+  margin-right: 80px;
+  border-radius: 8px;
+}
+
+.reads-informations {
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
+.reads-title {
+  font-size: 50px;
+  font-family: "Martian Mono-600", sans-serif;
+  color: #062630;
+  margin-bottom: 34px;
+}
+
+.reads-item-li {
+  display: flex;
+  width: 100%;
+  max-width: 431px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.read-item-li:last-child {
+  margin-bottom: 0;
+}
+
+.reads-check-icon {
+}
+
+.li-description {
+  font-size: 20px;
+  font-family: "Inter-regular", sans-serif;
+  align-items: center;
+  padding-left: 14px;
+  line-height: 140%;
+  color: #385159;
+}
+
+/* BOOK-CLUB */
+
+.book-club {
+}
+
+.book-club-container {
+  display: flex;
+  margin-top: 120px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 76px;
+}
+
+.book-club-informations {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.book-club-title {
+  font-size: 48px;
+  width: 540px;
+  font-family: "Martian Mono-600", sans-serif;
+  color: #062630;
+  margin-bottom: 24px;
+  background-image: url("../images/pattern-circle.png");
+  background-repeat: no-repeat;
+  background-position: left 10rem bottom;
+  line-height: 1.4;
+}
+.book-club-description {
+  font-size: 20px;
+  font-family: "Inter-regular", sans-serif;
+  color: #385159;
+}
+.book-club-img {
+  border-radius: 8px;
+}
+
+
+/* YOUR JOURNEY */
+
+.your-journey {
+}
+.your-journey-container {
+  border-radius: 8px;
+  margin-top: 120px;
+  background-image: linear-gradient(120deg, transparent,#FAF5F3  80%, #9cc9da),
+    url(../images/Vector.png);
+  width: 1170px;
+  height: 454px;
+}
+
+.your-journey-title {
+  margin-top: 80px;
+  margin-bottom: 64px;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Martian Mono-600", sans-serif;
+  align-content: center;
+  color: #062630;
+}
+.steps {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.step {
+  width: 510px;
+  background-image: url(../images/pattern-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.step:last-child {
+  background-image: none;
+}
+.step-number {
+  border: 2px solid #062630;
+  border-radius: 4px;
+  padding: 5px 9px;
+  display: inline-block;
+  margin-bottom: 38px;
+}
+.step-text {
+  font-size: 18px;
+  font-family: "Martian Mono-600";
+}
+
+.links-img {
+  position: relative;
+  left: -45rem;
+  top: 11rem;
+}
+
+
+
+/* MEMBERSHIP STYLES */
+
+
+.membership {
+}
+.membership-container {
+  margin-top: 120px;
+}
+.membership-title {
+
+}
+.membership-title-text {
+  font-size:50px;
+  font-family:"Martian Mono-600",sans-serif;
+  color:#062630;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.prices-container {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.starter-table {
+  border: 1px solid #E6E1DF;
+  border-radius:8px;
+  margin-top: 16px;
+  width:286px;
+  height:358px;
+}
+.starter-table-title {
+  
+  margin-top: 24px;
+  font-size:24px;
+  font-family:"Martian Mono-600",sans-serif;
+  color:#062630;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+.price-full {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.only-price {
+  font-size:34px;
+  font-family:"Martian Mono-600",sans-serif;
+  color:#062630;
+}
+.only-month {
+  font-family:"Inter-regular",sans-serif;
+  font-size:20px;
+  color: #385159;
+}
+.hr-middle {
+  border:1px solid;
+  width: 162px;
+  height: 1px;
+  color:#E6E1DF;
+  margin-bottom: 24px;
+}
+.check1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.under-hr-first-check {
+
+  font-size:20px;
+  font-family:"Inter-regular",sans-serif;
+  color:#385159;
+  
+}
+.starter-table-btn {
+  margin-top: 16px;
+  border:2px solid #062630;
+  border-radius:8px;
+  padding: 20px 43px;
+  background-color: #FFF5EF;
+  width:238px;
+}
+
+.pro-table {
+  background:linear-gradient(120deg, transparent,#FAF5F3  80%, #9cc9da);
+  width:350px;
+  height:390px;
+  border: 1px solid #E6E1DF;
+  border-radius:8px;
+}
+.pro-table-title {
+  margin-top: 40px;
+  font-size:24px;
+  font-family:"Martian Mono-600px",sans-serif;
+  color:#062630;
+  margin-bottom: 24px;
+}
+.pro-table .hr-middle {
+  width:302px;
+}
+.pro-table-btn {
+  margin-top: 16px;
+  width:302px;
+  padding:20px 75px;
+  border-radius:8px;
+  border:2px solid #062630;
+  background-color:#FFF5EF;
+}
+.enterprice-table {
+  margin-top: 16px;
+  border: 1px solid #E6E1DF;
+  border-radius:8px;
+  width:286px;
+  height:358px;
+}
+.customated-enterprice {
+  font-size:34px;
+  font-family:"Martian Mono-600",sans-serif;
+  color:#062630;
+  margin-bottom: 24px;
+}
+
+.enterprice-table .hr-middle {
+  width:238px;
+}
+
+.enterprice-table-btn {
+  margin-top: 16px;
+  border:2px solid #062630;
+  border-radius:8px;
+  padding: 20px 43px;
+  background-color: #FFF5EF;
+  width:238px;
+}
+
+.elements {
+  margin-left: 24px;
+}
+
+
+/* SARAH STYLES */
+
+.sarah-chen {
+}
+.sarah-chen-container {
+  margin-top:120px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+.sarah-chen-title {
+  margin-bottom: 32px;
+
+}
+.sarah-opasition {
+  font-size:34px;
+  font-family:"Martian Mono-600",sans-serif;
+  color:#062630;
+  margin-bottom: 32px;
+  width:970px;
+}
+.sarah-description {
+  font-size:20px;
+  font-family:"Inter-regular",sans-serif;
+  color:#385159;
+
+}
+
+
+/* STYLES DEBUG */
+
+footer {
+  background-image:url(../images/Vector.png);
+  background-color: #062630;
+}
+
+.debug {
+  
+  height:521px;
+ 
+  padding-top: 80px;
+}
+
+.debug-container {
+  text-align: center;width:753px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.debug-title-text {
+  font-size:50px;
+  font-family:"Martian Mono-600",sans-serif;
+  letter-spacing: -2px;
+  color:#fef5f3;
+}
+.debug-btn {
+  justify-content: center;
+  margin-top: 40px;
+  background-color: transparent;
+  border:2px solid #fff;
+  border-radius:8px;
+  margin-bottom: 24px;
+ 
+}
+.debug-btn-par-img {
+  padding:20.5px 24px;
+  display: flex;
+
+}
+footer .members-con {
+  justify-content: center;
+  margin-top: 24px;
+}
+.members-avatars {
+}
+.star-and-amount-container {
+}
+
+footer .amount-of-members {
+  color:#fff;
+}
+
+.real-footer {
+}
+.real-footer-container {
+}
+
+.hr-line {
+  border:1px solid;
+  color:#385159;
+  width:1170px;
+  height:1px;
+  margin-bottom: 24px;
+}
+.last-column {
+  display: flex;
+  justify-content: space-between;
+}
+.links-footer {
+  align-items: center;
+
+}
+.prod-time {
+  color:#fff;
+}
+.butter-fly-icon {
+  margin-right: 24px;
+}
+.linkedin-icon {
+}
+
